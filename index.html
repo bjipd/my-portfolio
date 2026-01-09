@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Dike's Portfolio </title>
     <link rel="stylesheet" href="/CSS/style.css"/>
@@ -12,16 +13,78 @@
 <body>
     <header>
         <nav id="nav-bar">
+          <div class="nav-container">   
             <ul class="nav-links">
-                <li><a href="#home" class="nav-link"> Home </a></li>
-                <li><a href="#collaboration" class="nav-link"> Collaborations </a></li>
-                <li><a href="#contact" class="nav-link"> Contact </a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#development">Skills</a></li>
+              <li><a href="#collaboration">Collaboration</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
+          </div>
         </nav>
-    </header>
-    <section id="home">
+      </header>
+      
+      <main>
+      <section id="home" class="section">
         <h1>Hello, I am Dike.</h1>
-        <p>A software Engineer</p>
-    </section>
+        <p>A Software Engineer based in Lagos, Nigeria. I am passionate about creating impactful solutions.</p>
+        <p>I love building intuitive interfaces and scalable backend systems.</p>
+      </section>
+      
+      <section id="development" class="section">
+        <h1>My Skillsets</h1>
+      
+        <div class="cards">
+          <a class="card">C# Development</a>
+          <a class="card">Front-End Development</a>
+          <a class="card">Node.js</a>
+          <a class="card">Cloud Computing (AWS)</a>
+          <a class="card">Java Development</a>
+          <a class="card">Flutter: Mobile app development</a>
+        </div>
+      </section>
+      
+      <section id="collaboration" class="section">
+        <h1>My Existing Projects</h1>
+        
+        <div class="cards">
+            <a class="card" href="https://github.com/codercodingss/PhoneBook_Project">Java Phonebook </a>
+            <a class="card" href="">Luré Memoir app ...coming soon</a>
+            <a class="card" href="https://crlrealestateng.com">CRL Estate Web</a>
+            <a class="card" href="">Svelly..coming soon</a>
+          </div>
+      </section>
+      
+      <section id="contact" class="section">
+        <h1>Contact Me</h1>
+        <p>dikeox11@gmail.com</p>
+      
+        <div class="socials">
+            <a href="https://github.com/bjipd" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          
+            <a href="https://www.linkedin.com/in/precious-ikuh-6a63363a5/" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          
+            <a href="https://x.com" target="_blank" aria-label="X">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+        </div>
+          
+      </section>
+
+      <a href="https://wa.me/+2348132748987" class="whatsapp-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      
+      </main>
+
+      <footer>
+        <p>&copy; <span id="year"></span> DD Inc. All rights reserved.</p>
+      </footer>
+      <script src="/JS/script.js"></script>
+     
 </body>
 </html>
