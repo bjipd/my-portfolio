@@ -132,6 +132,7 @@ section {
 #projects {
   text-align: center;
   position: relative;
+  width:70vw;
 }
 #projects h2 {
   margin-bottom: 40px;

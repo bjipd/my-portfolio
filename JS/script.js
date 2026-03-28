@@ -1,14 +1,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Toggle mobile navigation menu
-function toggleMenu() {
-  const nav = document.querySelector('nav');
-  nav.classList.toggle('active');
-}
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
 
-// Attach event listener to hamburger button
-const menuToggle = document.querySelector('.menu-toggle');
-menuToggle.addEventListener('click', toggleMenu);
+  // Attach event listener to hamburger button
+  const menuToggle = document.querySelector('.menu-toggle');
+  menuToggle.addEventListener('click', toggleMenu);
 
 // Smooth scrolling for nav links
 const navLinks = document.querySelectorAll('#nav_ul li a');
