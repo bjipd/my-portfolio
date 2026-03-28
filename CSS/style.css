@@ -121,6 +121,17 @@ section {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
+#about img 
+{
+  width: 20vw;
+  height: 15vw;
+  max-width: 25vh;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 3vh;
+}
+
 #about p {
   font-size: 1.2rem;
   line-height: 1.6;
@@ -269,7 +280,7 @@ section {
   background: rgb(63, 145, 196);
   border: none;
   margin-top: 20px;
-  color: bisque;
+  color: white;
   border-radius: 25px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
@@ -279,6 +290,7 @@ section {
 .contact_button:hover {
   background-color: rgb(4, 149, 240);
   cursor: pointer;
+  color: bisque;
 }
 
 .error-message {
