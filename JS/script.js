@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       targetSection.scrollIntoView({
         behavior: 'smooth'
       });
-    }
+  }
 
     // Close menu after clicking (on mobile)
     document.querySelector('nav').classList.remove('active');

@@ -412,6 +412,11 @@ img, video {
     padding: 20px;
   }
 
+  .explore 
+  {
+    width: 40vw;
+  }
+
   #contact form {
     width: 100%;
   }
