@@ -3,17 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Toggle mobile navigation menu
   function toggleMenu() {
     const nav = document.querySelector('nav');
+    const toggle = document.querySelector('.menu-toggle');
     nav.classList.toggle('active');
+    toggle.classList.toggle('active');
   }
-
+ 
   // Attach event listener to hamburger button
   const menuToggle = document.querySelector('.menu-toggle');
   menuToggle.addEventListener('click', toggleMenu);
 
-// Smooth scrolling for nav links
-const navLinks = document.querySelectorAll('#nav_ul li a');
+  // Smooth scrolling for nav links
+  const navLinks = document.querySelectorAll('#nav_ul li a');
 
-navLinks.forEach(link => {
+  navLinks.forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
     const targetId = this.getAttribute('href').substring(1);
@@ -27,6 +29,8 @@ navLinks.forEach(link => {
 
     // Close menu after clicking (on mobile)
     document.querySelector('nav').classList.remove('active');
+    document.querySelector('.menu-toggle').classList.remove('active');
+    document.querySelector('.menu-toggle').setAttribute('aria-expanded', false);
   });
 });
 

@@ -345,15 +345,49 @@ img, video {
 
   .menu-toggle {
     display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1100;
+  }
+
+  .menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 5px 0;
+  transition: 0.3s ease;
+  }
+
+   /* Animate to X */
+.menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  }
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
   }
 
   nav {
-    display: none; /* hidden by default */
-    width: 100%;
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
   }
 
   nav.active {
     display: block; /* show when toggled */
+    background-color: antiquewhite;
   }
 
   #nav_ul {
@@ -367,6 +401,10 @@ img, video {
   #nav_ul li a {
     color: #fff;
     font-size: 1.2rem;
+  }
+
+  #nav_ul li a:hover {
+    background-color: bisque;
   }
 
   section {
