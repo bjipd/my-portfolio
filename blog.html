@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Learn Together</title>
+    <link rel="stylesheet" href="CSS/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header role="banner">
-    <h1>Let's Blog it</h1>
-    <button class="menu-toggle" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <a href="index.html">Dx1 Digital Solutions</a>
+    
     <nav role="navigation">
       <ul id="nav_ul">
-        <input type="text" placeholder="Search blog posts..." aria-label="Search blog posts">
-        <button type="submit" aria-label="Search">Search</button>
+        <input type="text" placeholder="Search blog posts..." aria-label="Search blog posts" class="blogInput">
+        <button type="submit" aria-label="Search" class="blogButton">Search</button>
       </ul>
-      <ul><li><a href="index.html">Home</a></li></ul>
+      <ul><li></li></ul>
     </nav>
+    <h1>Let's Blog it</h1>
   </header>
+  <main role="main">
+    <section id="blogSubject">
+        <article>
+            <h2 id="blogTitle">Welcome to My Blog</h2>
+        </article>
+    </section>
+    <section id="blogPosts">
+        <article>
+            <h3>Getting Started with DevOps</h3>
+            <p>DevOps is a set of py. In this post, we wrted.</p>
+            <button><a href="#">Next Article</a></button>
+        </article>
+  </main>
+   <!-- Footer -->
+  <footer role="contentinfo" id="footer">
+    <p>&copy; <span id="currentYear"></span> Dx1 Digital Solutions. All rights reserved.</p>
+    <p>
+      <a href="#"><i class="fab fa-linkedin"></i></a> 
+      <a href="https://github.com/bjipd" target="_blank"><i class="fab fa-github"></i></a> 
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </p>
+  </footer>
 </body>
 </html>
