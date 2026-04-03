@@ -25,20 +25,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (href.startsWith('#')) {
       e.preventDefault();
     
-    const targetId = href.substring(1);
-    const targetSection = document.getElementById(targetId);
+      const targetId = href.substring(1);
+      const targetSection = document.getElementById(targetId);
 
-    if (targetSection) {
+      if (targetSection) {
       targetSection.scrollIntoView({
         behavior: 'smooth'
-      });
-    }  
-  }
+        });
+      }  
 
     // Close menu after clicking (on mobile)
     document.querySelector('nav').classList.remove('active');
     document.querySelector('.menu-toggle').classList.remove('active');
     document.querySelector('.menu-toggle').setAttribute('aria-expanded', false);
+    }
   });
 });
 
