@@ -1,5 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  let currentYear = new Date().getFullYear();
+  document.getElementById('currentYear').textContent = currentYear;
+
     // Toggle mobile navigation menu
   function toggleMenu() {
     const nav = document.querySelector('nav');
@@ -17,14 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navLinks.forEach(link => {
   link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
+    const href = this.getAttribute('href');
+    if (href.startsWith('#')) {
+      e.preventDefault();
+    
+    const targetId = href.substring(1);
     const targetSection = document.getElementById(targetId);
 
     if (targetSection) {
       targetSection.scrollIntoView({
         behavior: 'smooth'
       });
+    }  
   }
 
     // Close menu after clicking (on mobile)
